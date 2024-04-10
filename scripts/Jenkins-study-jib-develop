@@ -28,7 +28,7 @@ pipeline {
                     }
                 }
                 sh '''
-                /home/ubuntu/docker-compose/deploy_jenkins_study_develop.sh
+                sudo source /home/ubuntu/docker-compose/deploy_jenkins_study_develop.sh
                 '''
             }
         }
