@@ -6,7 +6,6 @@ pipeline {
     }
     agent any
     stages {
-        stages {
             stage('Start') {
                 steps {
                     slackSend (channel: SLACK_CHANNEL, color: '#FFFF00', message: "STARTED: deploy develop '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
@@ -33,7 +32,7 @@ pipeline {
                 '''
             }
         }
-   }
+    }
      post {
           success {
               slackSend (channel: SLACK_CHANNEL, color: '#00FF00', message: "SUCCESSFUL: deploy develop '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
@@ -41,5 +40,5 @@ pipeline {
           failure {
               slackSend (channel: SLACK_CHANNEL, color: '#FF0000', message: "FAILED: deploy develop '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
           }
-      }
+     }
 }
