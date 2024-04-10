@@ -2,7 +2,7 @@ plugins {
     id 'java'
     id 'org.springframework.boot' version '3.2.4'
     id 'io.spring.dependency-management' version '1.1.4'
-    id 'com.google.cloud.tools.jib' version '3.3.2'
+    id 'com.google.cloud.tools.jib' version '3.4.2'
 }
 
 group = 'com.example'
@@ -33,7 +33,7 @@ project.afterEvaluate {
     if (profile == 'production' || profile == 'develop') {
         jib {
             to {
-                image = profile == 'production' ? "jenkins-study/jib-production" : "jenkins-study/jib-develop"
+                image = profile == 'production' ? "dlawnddus/jenkins-study-jib-production" : "dlawnddus/jenkins-study-jib-develop"
                 tags = ['latest']
             }
         }
