@@ -1,0 +1,108 @@
+2024-04-10T21:49:43.106+09:00  INFO 46780 --- [restartedMain] c.s.j.jib.JenkinsStudyJibApplication     : Starting JenkinsStudyJibApplication using Java 17.0.7 with PID 46780 (/Users/imjoong-yeon/jenkins_study_jib/build/classes/java/main started by imjoong-yeon in /Users/imjoong-yeon/jenkins_study_jib)
+2024-04-10T21:49:43.107+09:00  INFO 46780 --- [restartedMain] c.s.j.jib.JenkinsStudyJibApplication     : The following 1 profile is active: "develop"
+2024-04-10T21:49:43.146+09:00  INFO 46780 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-10T21:49:43.146+09:00  INFO 46780 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-10T21:49:43.232+09:00  INFO 26664 --- [jenkins_study_jib] [restartedMain] c.s.j.jib.JenkinsStudyJibApplication     : Starting JenkinsStudyJibApplication using Java 17.0.7 with PID 26664 (/Users/imjoong-yeon/jenkins_study_jib/build/classes/java/main started by imjoong-yeon in /Users/imjoong-yeon/jenkins_study_jib)
+2024-04-10T21:49:43.233+09:00  INFO 26664 --- [jenkins_study_jib] [restartedMain] c.s.j.jib.JenkinsStudyJibApplication     : The following 1 profile is active: "develop"
+2024-04-10T21:49:43.319+09:00  INFO 26664 --- [jenkins_study_jib] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 18088 (http)
+2024-04-10T21:49:43.319+09:00  INFO 26664 --- [jenkins_study_jib] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-10T21:49:43.319+09:00  INFO 26664 --- [jenkins_study_jib] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-10T21:49:43.324+09:00  INFO 26664 --- [jenkins_study_jib] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-10T21:49:43.324+09:00  INFO 26664 --- [jenkins_study_jib] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 89 ms
+2024-04-10T21:49:43.378+09:00  INFO 26664 --- [jenkins_study_jib] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-10T21:49:43.393+09:00  INFO 26664 --- [jenkins_study_jib] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 18088 (http) with context path ''
+2024-04-10T21:49:43.396+09:00  INFO 26664 --- [jenkins_study_jib] [restartedMain] c.s.j.jib.JenkinsStudyJibApplication     : Started JenkinsStudyJibApplication in 0.259 seconds (process running for 14020.02)
+2024-04-10T21:49:43.658+09:00  INFO 46780 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 18088 (http)
+2024-04-10T21:49:43.666+09:00  INFO 46780 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-10T21:49:43.666+09:00  INFO 46780 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-10T21:49:43.687+09:00  INFO 46780 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-10T21:49:43.687+09:00  INFO 46780 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 538 ms
+2024-04-10T21:49:43.820+09:00  WARN 46780 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-10T21:49:43.829+09:00  WARN 46780 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-04-10T21:49:43.836+09:00  INFO 46780 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-10T21:49:43.844+09:00 ERROR 46780 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 18088 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 18088 or configure this application to listen on another port.
+
+2024-04-10T21:50:11.450+09:00  INFO 46834 --- [restartedMain] c.s.j.jib.JenkinsStudyJibApplication     : Starting JenkinsStudyJibApplication using Java 17.0.7 with PID 46834 (/Users/imjoong-yeon/jenkins_study_jib/build/classes/java/main started by imjoong-yeon in /Users/imjoong-yeon/jenkins_study_jib)
+2024-04-10T21:50:11.452+09:00  INFO 46834 --- [restartedMain] c.s.j.jib.JenkinsStudyJibApplication     : The following 1 profile is active: "develop"
+2024-04-10T21:50:11.469+09:00  INFO 46834 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-10T21:50:11.470+09:00  INFO 46834 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-10T21:50:11.819+09:00  INFO 46834 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 18088 (http)
+2024-04-10T21:50:11.825+09:00  INFO 46834 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-10T21:50:11.825+09:00  INFO 46834 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-10T21:50:11.847+09:00  INFO 46834 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-10T21:50:11.847+09:00  INFO 46834 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 377 ms
+2024-04-10T21:50:11.986+09:00  WARN 46834 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-10T21:50:11.997+09:00  WARN 46834 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-04-10T21:50:12.004+09:00  INFO 46834 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-10T21:50:12.012+09:00 ERROR 46834 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 18088 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 18088 or configure this application to listen on another port.
+
+2024-04-10T21:50:21.324+09:00  INFO 46849 --- [restartedMain] c.s.j.jib.JenkinsStudyJibApplication     : Starting JenkinsStudyJibApplication using Java 17.0.7 with PID 46849 (/Users/imjoong-yeon/jenkins_study_jib/build/classes/java/main started by imjoong-yeon in /Users/imjoong-yeon/jenkins_study_jib)
+2024-04-10T21:50:21.326+09:00  INFO 46849 --- [restartedMain] c.s.j.jib.JenkinsStudyJibApplication     : The following 1 profile is active: "develop"
+2024-04-10T21:50:21.344+09:00  INFO 46849 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-10T21:50:21.345+09:00  INFO 46849 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-10T21:50:21.682+09:00  INFO 46849 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 18089 (http)
+2024-04-10T21:50:21.687+09:00  INFO 46849 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-10T21:50:21.687+09:00  INFO 46849 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-10T21:50:21.706+09:00  INFO 46849 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-10T21:50:21.707+09:00  INFO 46849 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 362 ms
+2024-04-10T21:50:21.828+09:00  WARN 46849 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-10T21:50:21.840+09:00  INFO 46849 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 18089 (http) with context path ''
+2024-04-10T21:50:21.845+09:00  INFO 46849 --- [restartedMain] c.s.j.jib.JenkinsStudyJibApplication     : Started JenkinsStudyJibApplication in 0.746 seconds (process running for 1.065)
+2024-04-10T21:50:22.098+09:00  INFO 26664 --- [jenkins_study_jib] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2024-04-10T21:50:22.147+09:00  INFO 26664 --- [jenkins_study_jib] [restartedMain] c.s.j.jib.JenkinsStudyJibApplication     : Starting JenkinsStudyJibApplication using Java 17.0.7 with PID 26664 (/Users/imjoong-yeon/jenkins_study_jib/build/classes/java/main started by imjoong-yeon in /Users/imjoong-yeon/jenkins_study_jib)
+2024-04-10T21:50:22.148+09:00  INFO 26664 --- [jenkins_study_jib] [restartedMain] c.s.j.jib.JenkinsStudyJibApplication     : The following 1 profile is active: "develop"
+2024-04-10T21:50:22.225+09:00  INFO 26664 --- [jenkins_study_jib] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 18089 (http)
+2024-04-10T21:50:22.225+09:00  INFO 26664 --- [jenkins_study_jib] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-10T21:50:22.225+09:00  INFO 26664 --- [jenkins_study_jib] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-10T21:50:22.229+09:00  INFO 26664 --- [jenkins_study_jib] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-10T21:50:22.229+09:00  INFO 26664 --- [jenkins_study_jib] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 80 ms
+2024-04-10T21:50:22.266+09:00  INFO 26664 --- [jenkins_study_jib] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-10T21:50:22.271+09:00  WARN 26664 --- [jenkins_study_jib] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-04-10T21:50:22.274+09:00  INFO 26664 --- [jenkins_study_jib] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-10T21:50:22.283+09:00 ERROR 26664 --- [jenkins_study_jib] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 18089 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 18089 or configure this application to listen on another port.
+
+2024-04-10T21:50:51.471+09:00  INFO 46849 --- [http-nio-18089-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-10T21:50:51.472+09:00  INFO 46849 --- [http-nio-18089-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-10T21:50:51.473+09:00  INFO 46849 --- [http-nio-18089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

@@ -1,0 +1,40 @@
+pipeline {
+    environment {
+        registryCredential = 'dockerhub-jinseon'
+        dockerImage = ''
+        SLACK_CHANNEL = '#backend-build-notification'
+    }
+    agent any
+    stages {
+        stage('Start') {
+            steps {
+                slackSend (channel: SLACK_CHANNEL, color: '#FFFF00', message: "STARTED: deploy develop '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
+            }
+        }
+        stage('Deploy our image') {
+            steps {
+                script {
+                    docker.withRegistry( '', registryCredential ) {
+                        sh """
+                            cd analytics-api
+                            ./gradlew clean build
+                            ./gradlew jib -PSPRING_PROFILES_ACTIVE=develop
+
+                        """
+                    }
+                }
+                sh '''
+                sudo ssh ubuntu@10.10.15.194 -i /var/lib/jenkins/xo_idc.pem source ./docker-compose/deploy_analytics_api_develop.sh
+                '''
+            }
+        }
+   }
+  post {
+       success {
+           slackSend (channel: SLACK_CHANNEL, color: '#00FF00', message: "SUCCESSFUL: deploy develop '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
+       }
+       failure {
+           slackSend (channel: SLACK_CHANNEL, color: '#FF0000', message: "FAILED: deploy develop '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
+       }
+   }
+}
