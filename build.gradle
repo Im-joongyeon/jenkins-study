@@ -33,7 +33,7 @@ project.afterEvaluate {
     if (profile == 'production' || profile == 'develop') {
         jib {
             to {
-                image = profile == 'production' ? "crossangle/analytics-api-production" : "crossangle/analytics-api-develop"
+                image = profile == 'production' ? "jenkins-study/jib-production" : "jenkins-study/jib-develop"
                 tags = ['latest']
             }
         }

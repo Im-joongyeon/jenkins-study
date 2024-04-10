@@ -24,7 +24,7 @@ pipeline {
                     }
                 }
                 sh '''
-                sudo ssh ubuntu@10.10.15.194 -i /var/lib/jenkins/xo_idc.pem source ./docker-nginx-compose/deploy.sh
+                sudo ssh ubuntu@localhost -i /var/lib/jenkins/xo_idc.pem source ./docker-nginx-compose/deploy.sh
                 '''
             }
         }
