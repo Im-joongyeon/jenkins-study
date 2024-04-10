@@ -2,7 +2,7 @@ pipeline {
     environment {
         registryCredential = 'docker'
         dockerImage = ''
-        SLACK_CHANNEL = '#jenkins-study-alert'
+        SLACK_CHANNEL = 'jenkins-study-alert'
     }
     agent any
     stages {
@@ -28,7 +28,7 @@ pipeline {
                     }
                 }
                 sh '''
-                ./docker-compose/deploy_jenkins_study_develop.sh
+                /home/ubuntu/docker-compose/deploy_jenkins_study_develop.sh
                 '''
             }
         }
