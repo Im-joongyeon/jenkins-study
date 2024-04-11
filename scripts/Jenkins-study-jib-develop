@@ -31,9 +31,9 @@ pipeline {
                     }
                 }
                 sshagent (credentials: ['jenkins-ssh']) {
-                    sh '''
+                    sh """
                     ssh -o StrictHostKeyChecking=no ubuntu@${params.SERVER_HOST} 'source /home/ubuntu/docker-compose/deploy_jenkins_study_develop.sh'
-                    '''
+                    """
                 }
             }
         }
