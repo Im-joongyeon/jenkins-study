@@ -4,6 +4,9 @@ pipeline {
         dockerImage = ''
         SLACK_CHANNEL = 'jenkins-study-alert'
     }
+    parameters {
+        string(name: 'SERVER_HOST', defaultValue: '', description: 'SSH Server Host')
+    }
     agent any
     stages {
             stage('Start') {
@@ -27,9 +30,11 @@ pipeline {
                         """
                     }
                 }
-                sh '''
-                sudo source /home/ubuntu/docker-compose/deploy_jenkins_study_develop.sh
-                '''
+                sshagent (credentials: ['jenkins-ssh']) {
+                    sh '''
+                    ssh -o StrictHostKeyChecking=no ubuntu@${params.SERVER_HOST} 'source /home/ubuntu/docker-compose/deploy_jenkins_study_develop.sh'
+                    '''
+                }
             }
         }
     }
