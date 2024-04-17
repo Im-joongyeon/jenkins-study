@@ -32,7 +32,7 @@ pipeline {
                 }
                 sshagent (credentials: ['jenkins-ssh']) {
                     sh """
-                    ssh -o StrictHostKeyChecking=no ubuntu@${params.SERVER_HOST} 'source /home/ubuntu/docker-compose/deploy_jenkins_study_develop.sh'
+                    ssh -o StrictHostKeyChecking=no ubuntu@${params.SERVER_HOST} 'source /home/ubuntu/docker-compose/deploy-jenkins_study-develop.sh'
                     """
                 }
             }
